@@ -1,0 +1,32 @@
+CREATE TABLE PRODUCTS
+(ID INT,
+ NAME TEXT NOT NULL,
+ CATEGORY  INT  NOT NULL);
+
+ALTER TABLE PRODUCTS ADD PRIMARY KEY (NAME,ID);
+
+CREATE SEQUENCE products_id_seq;
+ALTER TABLE PRODUCTS ALTER COLUMN ID SET DEFAULT nextval('products_id_seq');
+ALTER SEQUENCE products_id_seq OWNED BY PRODUCTS.ID;
+
+INSERT INTO CUSTOMER (NAME, CATEGORY) VALUES ('milk', 'Dairy foods');
+INSERT INTO CUSTOMER (NAME, CATEGORY) VALUES ('tomato', 'Vegetable'  ) ;
+INSERT INTO CUSTOMER (NAME, CATEGORY) VALUES ('apple', 'Fruits' );
+INSERT INTO CUSTOMER (NAME, CATEGORY) VALUES ('water', 'Drinks');
+
+CREATE TABLE REGISTRATION
+(ID INT,
+ USERNAME TEXT NOT NULL,
+ MAIL  TEXT NOT NULL,
+ PASSWORD TEXT NOT NULL);
+
+ALTER TABLE REGISTRATION ADD PRIMARY KEY (MAIL,ID);
+
+CREATE SEQUENCE registration_id_seq;
+ALTER TABLE REGISTRATION ALTER COLUMN ID SET DEFAULT nextval('registration_id_seq');
+ALTER SEQUENCE registration_id_seq OWNED BY REGISTRATION.ID;
+
+INSERT INTO REGISTRATION (USERNAME, MAIL,PASSWORD) VALUES ('Denis', 'denis@tut.by', 'mypassword'); // TODO hash passwords instead of plaintext
+INSERT INTO REGISTRATION (USERNAME, MAIL,PASSWORD) VALUES ('Tatsiana', 'Tatsiana@tut.by','secret'); // TODO hash passwords instead of plaintext
+INSERT INTO REGISTRATION (USERNAME, MAIL,PASSWORD) VALUES ('Sofiya', 'Sofiya@gmail.com','robot'); // TODO hash passwords instead of plaintext
+INSERT INTO REGISTRATION (USERNAME, MAIL,PASSWORD) VALUES ('Matvej', 'Matvej@tut.by','games'); // TODO hash passwords instead of plaintext
