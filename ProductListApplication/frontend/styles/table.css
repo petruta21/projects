@@ -1,0 +1,25 @@
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 10%;
+}
+
+
+.table_fruits, .table_nuts , .table_seefood, .table_nuts, .table_seefood, .table_dairy, .table_meat, .table_chemicals, .table_household, .table_sweets, 
+.table_drinks, .table_cosmetics, .table_other {
+  background-color: rgb(84, 201, 113);
+}
+
+.table_vegetables{
+  border-collapse: separate;
+  border-spacing: 4px;
+  background-color: rgb(84, 201, 113);
+  border-spacing: 30px;
+}
+
+.veg{
+  padding-bottom: 10px;
+}

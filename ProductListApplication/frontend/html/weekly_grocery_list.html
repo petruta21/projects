@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>weekly grocery list</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/list.css" />
+    <link rel="stylesheet" href="/styles/table.css" />
+    
+  </head>
+  <body>
+    <img src="/images/main_list_products.jpg" class="image_front"></a><br><br>
+    <a href="./about.html" class="about">About me</a><br><br>
+    <a href="./list.html" class="about">Add products from the grocery list</a><br><br>
+    <div id="login-box">
+    <br><input id="todo-title" type="text" placeholder="Enter Product name"/>
+    <input id="amount-picker" type="text" placeholder="Enter amount"/>
+    <button onclick="addTodo()">Add product</button><br><br>
+
+    <div id="todo-list"></div>
+    <script type="text/javascript" src="/js/your_list_products.js"></script>
+    <script type="text/javascript" src="/js/table.js"></script>
+
+    <table>
+      <tr>
+        <th>Selection </th>
+        <th>Product name </th>
+        <th>Amount </th>
+        <th>Action </th>
+      </tr>
+      <tr>
+        <th> <input type="checkbox"> </th>
+        <th>Milk </th>
+        <th>6</th>
+        <th><button>Delete</button> <button>Update</button></th>
+      </tr>
+      <tr>
+        <th> <input type="checkbox"> </th>
+        <th>Eggs</th>
+        <th>30</th>
+        <th><button>Delete</button> <button>Update</button></th>
+      </tr>
+    </table>  
+  </div>
+    </body>
+  </body>
+</html>

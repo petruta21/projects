@@ -1,0 +1,27 @@
+[
+    {
+        "id": 3,
+        "name": "banana",
+        "category": "fruit"
+    },
+    {
+        "id": 4,
+        "name": "mineral_water",
+        "category": "Drinks"
+    },
+    {
+        "id": 1,
+        "name": "orange",
+        "category": "fruit"
+    },
+    {
+        "id": 2,
+        "name": "onion",
+        "category": "vegetables"
+    },
+    {
+        "id": 3,
+        "name": "carret",
+        "category": "vegetables"
+    }
+]

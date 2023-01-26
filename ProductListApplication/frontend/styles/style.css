@@ -1,0 +1,28 @@
+.image_product{
+  width: auto;  
+  height: 370px; 
+  padding-left: 620px;
+  padding-top: 3px;
+}
+
+.image_front
+{
+  width: auto;  
+  height: 300px; 
+  padding-left: 620px;
+  padding-top: 3px;
+}
+
+.image_list{
+  width: auto;  
+  height: 370px; 
+}
+
+.login_user .cancelbtn{
+  padding: 5%;
+}
+
+.about{
+  padding-left: 620px;
+}
+

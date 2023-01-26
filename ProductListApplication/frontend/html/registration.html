@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/styles/registration.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="/js/login_check.js"></script>
+  </head>
+    <title>Registration</title>
+  </head>
+  <body>
+    <img src="/images/main_list_products.jpg" class="image_front"></a>
+<div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    <form name="myform" method="post" onsubmit="return validateform()" > 
+    <input type="text" name="username" placeholder="Username" />
+
+    <form name="emailform" action="#" onsubmit="return validateemail()">  
+    <input type="text" name="email" placeholder="E-mail" />
+   
+    <form name="f1"  onsubmit="return matchpass()">  
+    <input type="password" name="password" placeholder="Password" />
+    <input type="password" name="password2" placeholder="Retype password" />
+  
+    <input type="submit" name="signup_submit" value="Sign me up" />
+  </form> </form></form>
+  </div>
+
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+
+    <button class="social-signin facebook">Log in with facebook</button>
+    
+    <script src="/js/google.js"></script>
+    <div class="g-signin2" data-onsuccess="onSignIn">
+    <button class="social-signin google">Log in with Google</button><br><br><br><br><br>
+  </div>
+
+    <a href="./login.html">Login page</a>
+  </div>
+  <div class="or">OR</div>
+</div>
+</body>
+</html>
+
