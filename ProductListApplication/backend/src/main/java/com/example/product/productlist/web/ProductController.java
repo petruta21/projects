@@ -3,6 +3,8 @@ package com.example.product.productlist.web;
 
 import com.example.product.productlist.service.ProductService;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -36,4 +38,15 @@ public class ProductController {
     private ProductDTO update(@Valid @RequestBody ProductDTO product, @PathVariable("id") Long id) {
         return productService.update(product, id);
     }
+
+    @GetMapping("/{id}")
+    private ResponseEntity<RegistrationDTO> getProductById(@PathVariable("id") Long id) {
+        ProductDTO result = productService.getProductById(id);
+        if (result == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        } else {
+            return new ResponseEntity(result, HttpStatus.OK);
+        }
+    }
+
 }

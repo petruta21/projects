@@ -35,7 +35,7 @@ public class ProductService {
         return convertToProductDTO(productRepository.save(convertToProduct(productDto)));
     }
 
-    public ProductDTO getCustomerById(Long id) {
+    public ProductDTO getProductById(Long id) {
         return productRepository.findById(id).map(ProductService::convertToProductDTO).orElse(null);
     }
 

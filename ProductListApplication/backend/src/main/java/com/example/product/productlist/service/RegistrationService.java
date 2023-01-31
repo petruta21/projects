@@ -37,7 +37,7 @@ public class RegistrationService {
     }
 
 
-    public RegistrationDTO getCustomerById(Long id) {
+    public RegistrationDTO getUserById(Long id) {
         return registrationRepository.findById(id).map(RegistrationService::convertToRegistrationDTO).orElse(null);
     }
 

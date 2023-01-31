@@ -1,0 +1,14 @@
+[
+  {
+    "name": "milk",
+    "category": "Dairy foods"
+  },
+  {
+    "name": "tomato",
+    "category": "Vegetables"
+  },
+  {
+    "name": "apple",
+    "category": "Fruits"
+  }
+]

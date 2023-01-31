@@ -1,0 +1,5 @@
+INSERT INTO products (name, category) VALUES ( 'milk', 'Dairy foods')
+INSERT INTO products (name, category) VALUES ( 'tomato', 'Vegetables' )
+INSERT INTO products (name, category) VALUES ( 'apple', 'Fruits' )
+INSERT INTO products (name, category) VALUES ( 'water', 'Drinks' )
+INSERT INTO products (name, category) VALUES ( 'ice-cream', 'Dairy foods' )
